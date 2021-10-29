@@ -32,7 +32,7 @@ window.onload = () => {
   fadeOut();
 };
 
-// Slider================
+// ==========Slider================
 var swiper = new Swiper(".books-slider", {
   loop: true,
   centeredSlides: true,

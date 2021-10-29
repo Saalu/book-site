@@ -61,7 +61,7 @@ section {
 }
 
 section {
-  min-height: 1200px;
+  /* min-height: 1200px; */
 }
 
 header .header-1 {
@@ -274,7 +274,9 @@ header .header-2.active {
 
 /*========Section Start ==========  */
 .home {
-  background: url(../image/banner-bg.jpg) center/cover no-repeat;
+  background: url(../image/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .home .row {
@@ -313,8 +315,37 @@ header .header-2.active {
   line-height: 2;
   padding: 1rem 0;
 }
+/*========Section Slider End ==========  */
 
-/*========Section End ==========  */
+/*========Section icons Start ==========  */
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.icons-container .icons {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 1.5rem;
+}
+
+.icons-container .icons i {
+  font-size: 3.5rem;
+  color: var(--green);
+}
+.icons-container .icons h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+.icons-container .icons p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+/*========Section icons End ==========  */
 
 /* media queries  */
 
