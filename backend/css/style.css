@@ -40,6 +40,10 @@ html::-webkit-scrollbar-thumb {
   background: var(--black);
 }
 
+section {
+  padding: 5rem 9%;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -173,10 +177,6 @@ header .header-2.active {
   background: var(--dark-color);
 }
 
-body {
-  height: 390rem;
-}
-
 /* ============ Sign In Form */
 
 .login-form-container {
@@ -188,9 +188,9 @@ body {
   position: fixed;
   top: 0;
   right: -105%;
-  z-index: 10000;
   width: 100%;
   height: 100%;
+  z-index: 10000;
 }
 
 .login-form-container.active {
@@ -271,6 +271,50 @@ body {
 }
 
 /*========FormEnd ==========  */
+
+/*========Section Start ==========  */
+.home {
+  background: url(../image/banner-bg.jpg) center/cover no-repeat;
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  flex: 1 1 42rem;
+}
+.home .row .books-slider {
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.home .row .books-slider a img {
+  height: 25rem;
+}
+.home .row .books-slider a:hover img {
+  transform: scale(0.9);
+}
+.home .row .books-slider .stand {
+  width: 100%;
+}
+
+.home .row .content h3 {
+  color: var(--black);
+  font-size: 4.5rem;
+}
+
+.home .row .content p {
+  color: var(--light-color);
+  font-size: 1.4rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+/*========Section End ==========  */
 
 /* media queries  */
 
