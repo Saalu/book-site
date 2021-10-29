@@ -24,7 +24,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.9%;
   overflow-x: hidden;
   scroll-padding-top: 5rem;
   scroll-behavior: smooth;
@@ -38,6 +38,26 @@ html::-webkit-scrollbar-track {
 }
 html::-webkit-scrollbar-thumb {
   background: var(--black);
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  color: #fff;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  background: var(--green);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--dark-color);
 }
 
 section {
@@ -157,9 +177,144 @@ header .header-2.active {
   background: var(--dark-color);
 }
 
-body {
-  height: 390rem;
+/* ============ Sign In Form */
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  /* background: #0009; */
+  position: fixed;
+  top: 0;
+  right: -105%;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
 }
+
+.login-form-container.active {
+  right: 0;
+}
+
+.login-form-container form {
+  background: #fff;
+  border: var(--border);
+  margin: 2rem;
+  padding: 2rem;
+  width: 40rem;
+  box-shadow: var(--box-shadow);
+}
+
+.login-form-container form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+}
+
+.login-form-container form span {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+.login-form-container form .box {
+  width: 100%;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+  border: var(--border);
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.login-form-container form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem 0;
+}
+
+.login-form-container form .checkbox label {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+.login-form-container form .btn {
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.login-form-container form p {
+  padding-top: 0.8rem;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+.login-form-container form p a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.login-form-container #close-login-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.login-form-container #close-login-btn:hover {
+  color: rgb(199, 25, 25);
+}
+
+/*========FormEnd ==========  */
+
+/*========Section Start ==========  */
+.home {
+  background: url(../image/banner-bg.jpg) center/cover no-repeat;
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  flex: 1 1 42rem;
+}
+.home .row .books-slider {
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.home .row .books-slider a img {
+  height: 25rem;
+}
+.home .row .books-slider a:hover img {
+  transform: scale(0.9);
+}
+.home .row .books-slider .stand {
+  width: 100%;
+}
+
+.home .row .content h3 {
+  color: var(--black);
+  font-size: 4.5rem;
+}
+
+.home .row .content p {
+  color: var(--light-color);
+  font-size: 1.4rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+/*========Section End ==========  */
 
 /* media queries  */
 
