@@ -80,3 +80,28 @@ var swiper = new Swiper(".featured-slider", {
     },
   },
 });
+
+// ---------Feature slider------------
+var swiper = new Swiper(".arrivals-slider", {
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
