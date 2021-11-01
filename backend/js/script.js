@@ -12,6 +12,14 @@ document.querySelector("#close-login-btn").onclick = () => {
   loginForm.classList.remove("active");
 };
 
+function loader() {
+  document.querySelector(".loader-container").classList.add("active");
+}
+
+function fadeOut() {
+  setTimeout(loader, 4000);
+}
+
 window.onscroll = () => {
   searchForm.classList.remove("active");
 
@@ -130,8 +138,31 @@ var swiper = new Swiper(".reviews-slider", {
     768: {
       slidesPerView: 3,
     },
-    1024: {
-      slidesPerView: 4,
+  },
+});
+
+var swiper = new Swiper(".blogs-slider", {
+  spaceBetween: 10,
+  loop: true,
+  centeredSlides: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
     },
   },
 });

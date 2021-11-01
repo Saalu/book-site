@@ -576,6 +576,7 @@ header .header-2.active {
   border: var(--border);
   padding: 2rem;
   text-align: center;
+  margin: 2rem 0;
 }
 
 .reviews .reviews-slider .box:hover {
@@ -607,6 +608,135 @@ header .header-2.active {
   font-size: 1.4rem;
 }
 /*========Section Reviews End ==========  */
+/*========Section Blog Start ==========  */
+
+.blogs .blogs-slider .box {
+  /* width: 30rem; */
+  border: var(--border);
+  margin: 2rem 0;
+}
+
+.blogs .blogs-slider .box:hover {
+  border: var(--border-hover);
+}
+.blogs .blogs-slider .box .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.blogs .blogs-slider .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.blogs .blogs-slider .box:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .blogs-slider .box .content {
+  padding: 1.5rem;
+}
+.blogs .blogs-slider .box .content h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+.blogs .blogs-slider .box .content p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.blogs .blogs-slider .box .swiper-pagination {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+/*========Section Blog End ==========  */
+/*========Section Footer ==========  */
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box i {
+  color: var(--green);
+
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box .map {
+  width: 100%;
+}
+.footer .share {
+  padding: 1rem 0;
+  text-align: center;
+}
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  background: var(--green);
+  margin: 0.3rem;
+  border-radius: 50%;
+}
+
+.footer .share a:hover {
+  background: var(--black);
+}
+
+.footer .credit {
+  border-top: var(--border);
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--light-color);
+  text-align: center;
+}
+
+.footer .credit span {
+  color: var(--green);
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-container.active {
+  display: none;
+}
+
+.loader-container img {
+  height: 10rem;
+}
+/*========Section Footer End ==========  */
 
 /* media queries  */
 
